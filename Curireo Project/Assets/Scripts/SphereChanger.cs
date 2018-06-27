@@ -15,7 +15,7 @@ public class SphereChanger : MonoBehaviour
     }
     IEnumerator FadeCamera(Transform nextSphere)
     {
-        //No fader, so just swap the camera position
+        //Current position of camera is updated to the referenced sphere's position 
         Camera.main.transform.parent.position = nextSphere.position;
         yield return null;
     }
